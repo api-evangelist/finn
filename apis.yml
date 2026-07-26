@@ -1,7 +1,26 @@
 aid: finn
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/finn.png
 name: Finn
-description: 'Finn is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'FINN (finn.com) is a Munich-based consumer car-subscription service that lets
+  individuals and businesses lease a car on a flexible monthly subscription, with insurance,
+  maintenance, registration, taxes, and roadside assistance bundled into one all-inclusive
+  price. Subscribers pick from more than twenty vehicle brands on terms from six to twenty-four
+  months, and the company also runs a fleet/business offering. Backed by HV Capital, FINN
+  operates in Germany, the United States, and other European markets. FINN is a consumer,
+  direct-to-customer business with no public developer API or partner API program surfaced at
+  this time; this profile captures its public web, security, and legal surface for the API
+  Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/finn/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +30,48 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Automotive
+- Car Subscription
+- Mobility
+- Leasing
+- Fleet
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/finn-vulnerability-disclosure.yml
+- type: Security
+  url: security/finn-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/finn-domain-security.yml
+- type: Website
+  url: https://www.finn.com/
+- type: Blog
+  url: https://www.finn.com/en-DE/blog
+- type: About
+  url: https://www.finn.com/de-DE/about-us
+- type: Support
+  url: https://support.finn.com/hc/de-de
+- type: TermsOfService
+  url: https://www.finn.com/de-DE/terms
+- type: PrivacyPolicy
+  url: https://www.finn.com/de-DE/privacy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/finn-auto
+- type: WellKnown
+  url: well-known/finn-well-known.yml
+- type: SecurityTxt
+  url: well-known/finn-security.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

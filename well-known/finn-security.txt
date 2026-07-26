@@ -1,0 +1,5 @@
+Contact: mailto:security@finn.com
+Expires: 2026-08-31T00:00:00Z
+Preferred-Languages: en,de
+Canonical: https://finn.com/.well-known/security.txt
+Canonical: https://www.finn.com/.well-known/security.txt
